@@ -1,11 +1,12 @@
-
+/* FILE: contact.html */
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - My Portfolio</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,10 +22,14 @@
     </nav>
   </header>
 
-  <main class="home">
-    <img src="https://via.placeholder.com/1200x400" alt="Banner" class="banner">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Explore my work and get in touch!</p>
+  <main class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </main>
 </body>
 </html>
